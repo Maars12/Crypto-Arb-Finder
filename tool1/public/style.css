@@ -1,0 +1,11 @@
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+.size1 {
+    font-size: 5vw;
+}
