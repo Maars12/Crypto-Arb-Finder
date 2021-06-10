@@ -1,4 +1,5 @@
 import './App.css';
+import API from "./components/API";
 
 function App() {
   return (
@@ -30,3 +31,21 @@ function App() {
 }
 
 export default App;
+
+// componentDidMount() {
+//   API.search()
+//     .then((res) =>
+//       res.data.results.map((result) => ({
+//         name: `${result.name.first} ${result.name.last}`,
+//         searchName: `${result.name.first}${result.name.last}`,
+//         id: result.registered.date,
+//         photo: result.picture.medium,
+//         email: result.email,
+//         phone: result.phone,
+//         location: result.location.city,
+//         dob: moment(result.dob.date).format("MM/DD/YYYY"),
+//       }))
+//     )
+//     .then((newData) => this.setState({ results: newData }))
+//     .catch((error) => console.log(error));
+// }
